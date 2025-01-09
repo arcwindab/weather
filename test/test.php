@@ -1,10 +1,10 @@
 <?php
 
-require_once('../src/php/smhi.php');
-require_once('../src/php/weatherapi.php');
-require_once('../src/php/aurora.php');
-require_once('../src/php/kp.php');
-require_once('../src/php/place.php');
+require_once(__DIR__ . '/../src/php/smhi.php');
+require_once(__DIR__ . '/../src/php/weatherapi.php');
+require_once(__DIR__ . '/../src/php/aurora.php');
+require_once(__DIR__ . '/../src/php/kp.php');
+require_once(__DIR__ . '/../src/php/place.php');
 
 $latitude            = 59.127241;
 $longitude           = 18.102768;
@@ -23,4 +23,3 @@ if ((!empty($smhi)) && ($place != '') && ($kp != '') && ($aurora != '')) {
     echo "Test failed!\n";
     exit(1); // Misslyckas
 }
-?>
